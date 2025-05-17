@@ -27,3 +27,14 @@ cd AI/face_classification
 
 # 필요한 패키지 설치
 pip install -r requirements.txt
+
+## 모델 파일 다운로드
+
+이 코드를 실행하기 전에 Hugging Face에서 모델 파일을 다운로드해야 합니다:
+
+```bash
+# 모델 디렉토리 생성
+mkdir -p models
+
+# 모델 다운로드
+curl -L https://huggingface.co/metadome/face_shape_classification/resolve/main/pytorch_model.bin -o models/model_85_nn_.pth
